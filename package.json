@@ -1,0 +1,28 @@
+{
+  "name": "substitutioncipher-js",
+  "version": "1.0.0",
+  "description": "This package helps in using substitution cipher inside any package",
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/SubramanyaKS/substitutioncipher/issues"
+  },
+  "homepage": "https://github.com/SubramanyaKS/substitutioncipher",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SubramanyaKS/substitutioncipher.git"
+  },
+  "keywords": [],
+  "author": "subramanyaks subramanyaks22@gmail.com",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
