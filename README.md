@@ -23,18 +23,24 @@ npm i substitutioncipher-js
 const {encrypt,decrypt} = require('substitutioncipher-js');
 
 //declare plaintext
-var plainText = "Hello World";
+let plainText = "Hello World";
 //declare key
-var key=5;
+let key=5;
+//optional space default true if false give result ignoring space
+let space=true
 
 //encrypt function to get ciphertext
-var cipherText = encrypt(plainText,key);
+var cipherText = encrypt(plainText,key,space);
 
 console.log("encryption",cipherText); //output : Mjqqt btwqi
 
 //decrypt function to get plaintext 
-var plaintext = decrypt(cipherText,key);
+let plaintext = decrypt(cipherText,key);
 
 console.log("Decryption",plaintext); //output : Hello World
 
 ```
+
+## LICENSE
+
+This project is under MIT licence. please read `License` file.
