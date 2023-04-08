@@ -44,3 +44,6 @@ console.log("Decryption",plaintext); //output : Hello World
 ## LICENSE
 
 This project is under MIT licence. please read `License` file.
+
+
+**Note: the substitution cipher is easily decryptable**
