@@ -1,6 +1,6 @@
 var allCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function encrypt(plaintext,key) {
+function encrypt(plaintext,key,space=true) {
     
     let hashMap = new Map([]);
 
@@ -12,7 +12,12 @@ function encrypt(plaintext,key) {
     let cipherText ='';
     for (let index = 0; index < plaintext.length; index++) {
         if(plaintext[index]==" "){
+            if(space){
             cipherText+=' ';
+            }
+            else{
+                continue;
+            }
         }
         else if(allCharacters[plaintext[index]]!=-1){
             cipherText+=hashMap.get(plaintext[index]);
@@ -29,7 +34,7 @@ function encrypt(plaintext,key) {
 
 // console.log(encrypt("I am studying Data Encryption",4));
 
-function decrypt(cipherText,key){
+function decrypt(cipherText,key,space=true){
     let hashMap = new Map([]);
 
     for (let index = 0; index < allCharacters.length; index++) {
@@ -39,7 +44,12 @@ function decrypt(cipherText,key){
     let plainText ='';
     for (let index = 0; index < cipherText.length; index++) {
         if(cipherText[index]==" "){
-            plainText+=' ';
+            if(space){
+                plainText+=' ';
+                }
+                else{
+                    continue;
+                }
         }
         else if(allCharacters[cipherText[index]]!=-1){
             plainText+=hashMap.get(cipherText[index]);
