@@ -1,6 +1,6 @@
 {
   "name": "substitutioncipher-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package helps in using substitution cipher inside any package",
   "main": "index.js",
   "bugs": {
