@@ -4,8 +4,37 @@
 
 ## Installation
 
-you can install this package using command
+you can install this package using npm command
 
 ```
 npm i substitutioncipher-js
+```
+
+## Usage
+
+`substitutioncipher-js` contains two function `encrypt` and `decrypt`. 
+* encrypt function takes the plaintext and key as input or parameter and it returns the ciphertext based on substitution algorithm. 
+* decrypt function takes the ciphertext and key as input or parameter  and it returns the plaintexttext based on substitution algorithm
+
+## Example
+
+```
+//import library
+const {encrypt,decrypt} = require('substitutioncipher-js');
+
+//declare plaintext
+var plainText = "Hello World";
+//declare key
+var key=5;
+
+//encrypt function to get ciphertext
+var cipherText = encrypt(plainText,key);
+
+console.log("encryption",cipherText); //output : Mjqqt btwqi
+
+//decrypt function to get plaintext 
+var plaintext = decrypt(cipherText,key);
+
+console.log("Decryption",plaintext); //output : Hello World
+
 ```
