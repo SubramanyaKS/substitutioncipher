@@ -20,7 +20,7 @@ npm i substitutioncipher-js
 
 ## Example
 
-```
+```js
 //import library
 const {encrypt,decrypt} = require('substitutioncipher-js');
 
