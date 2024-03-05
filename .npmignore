@@ -3,3 +3,4 @@ test/
 tsconfig.json
 .gitignore
 dummy.js
+node_modules
