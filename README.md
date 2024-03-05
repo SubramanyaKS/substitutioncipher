@@ -22,7 +22,7 @@ npm i substitutioncipher-js
 
 ```js
 //import library
-const {encrypt,decrypt} = require('substitutioncipher-js');
+import {encrypt,decrypt} from ('substitutioncipher-js');
 
 //declare plaintext
 let plainText = "Hello World";
